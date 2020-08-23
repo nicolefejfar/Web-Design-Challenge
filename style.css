@@ -10,15 +10,30 @@ body {
     background-color: gainsboro;
 }
 
-.card-title {
-    color: #54aaaa;
-    font-weight: bold;
-}
-
 .display-6 {
     color: #54aaaa;
 }
 
 .jumbotron {
     background-color: white;
+}
+
+
+/* @media (max-width: 890px) {
+    .nav-title {
+        width: 49%;
+        transition: width 0.5s ease-in-out;
+    }
+} */
+
+@media (max-width: 992px) {
+    body {
+        background-color: white;
+    }
+    /* .index_title {
+        background-color: orange;
+        color: #54aaaa;
+        width: 100%;
+        padding: 10px; */
+    }
 }

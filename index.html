@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Latitude Dashboard</title>
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,9 +18,9 @@
         </button>
     
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav float-right">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -31,13 +31,8 @@
                     </div>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="comparison.html">Comparison</a></li>
+                <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
             </ul>
         </div>
       </nav>
@@ -47,9 +42,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 col-md-12">
+            <div class="col-lg-7">
                 <div class="jumbotron">
-                    <h2 class="display-6">Weather vs. Latitude</h2>
+                    <h2 class="display-6">Summary: Weather vs. Latitude</h2>
                     <hr class="my-4">
                     <img class="img-fluid float-left mr-4" src="Assets/weather.jpg" alt="weather Image" width=200>
                     <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
@@ -57,21 +52,21 @@
                     <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
                 </div>
             </div>
-            <div class="col-lg-5 col-md-12">
+            <div class="col-lg-5 col 12">
                 <div class="jumbotron">
                     <h2 class="display-6">Visualizations</h2>
                     <hr class="my-4">
                     <div class="row">
-                        <div class="vis-thumb col-lg-6">
+                        <div class="vis-thumb col-lg-6 col 3">
                             <a href="temperature.html"><img class="img-fluid" alt="Temperature Plot" src="Assets/temp.png"</a>
                         </div>
-                        <div class="vis-thumb col-lg-6">
+                        <div class="vis-thumb col-lg-6 col 3">
                             <a href="humidity.html"><img class="img-fluid" alt="Humidity Plot" src="Assets/humid.png"</a>
                         </div>
-                        <div class="vis-thumb col-lg-6">
+                        <div class="vis-thumb col-lg-6 col 3">
                             <a href="cloudiness.html"><img class="img-fluid" alt="Cloudiness Plot" src="Assets/cloud.png"</a>
                         </div>
-                        <div class="vis-thumb col-lg-6">
+                        <div class="vis-thumb col-lg-6 col 3">
                             <a href="wind_speed.html"><img class="img-fluid" alt="Wind Speed Plot" src="Assets/wind.png"</a>
                         </div>
                     </div>
