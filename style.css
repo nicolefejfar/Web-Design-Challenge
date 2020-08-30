@@ -10,8 +10,9 @@ body {
     background-color: gainsboro;
 }
 
-.display-6 {
+h2 {
     color: #54aaaa;
+    text-align: center;
 }
 
 h3 {
@@ -22,10 +23,6 @@ h3 {
     background-color: white;
 }
 
-/* th{
-    position: sticky;
-    top: 0;
-} */
 
 #tablefix {
     overflow-x:auto;
@@ -48,21 +45,8 @@ th {
     background: black;
 }
 
-/* @media (max-width: 890px) {
-    .nav-title {
-        width: 49%;
-        transition: width 0.5s ease-in-out;
-    }
-} */
-
 @media (max-width: 992px) {
     body {
         background-color: white;
-    }
-    /* .index_title {
-        background-color: orange;
-        color: #54aaaa;
-        width: 100%;
-        padding: 10px; */
     }
 }
