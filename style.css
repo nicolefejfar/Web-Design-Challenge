@@ -28,15 +28,33 @@ h5 {
     border: none;
     background-color:white}
 
-.navbar .nav-item:hover .nav-link {
-    background-color:rgba(210, 213, 216, 0.151);}
-
 body {
     background-color: gainsboro;}
 
-@media (max-width: 991px) {
+@media (min-width: 768px) {
+    .bg-custom {
+        background-color: white;
+    }}
+
+@media (max-width: 767px) {
     body {
-        background-color: white;}}
+        background-color: white;}
+    .bg-custom {
+        background-color: #54aaaa;}
+    .dropdown-menu {
+        background-color: #54aaaa;}
+    #plot {
+        color: white;}
+    .dropdown-item {
+    color: white;}
+    .navbar .nav-item .nav-link{
+    color: white;}
+    .navbar .nav-item .nav-link:hover {
+    background-color:rgba(210, 213, 216, 0.151);
+    color: white;}
+    .dropdown-item:hover {
+    color: white;
+    background-color:rgba(210, 213, 216, 0.151);}}
 
 .active {
     border: 1.5px solid #54aaaa;}
@@ -45,7 +63,7 @@ body {
     border: 1.5px solid #54aaaa;}
 
 .container {
-    margin-top: 30px;}
+    margin-top: 20px;}
 
 .jumbotron {
     background-color: white;}
@@ -53,7 +71,7 @@ body {
 #tablefix {
     overflow-x:auto;
     overflow-y:auto;
-    max-height:700px;
+    max-height:600px;
     max-width: auto;}
 
 #tablefix thead th {

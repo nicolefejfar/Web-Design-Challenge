@@ -12,7 +12,7 @@
 
 <body>
 <!-- Nav Bar -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light">
+<nav class="navbar navbar-expand-md bg-custom navbar-light">
   <a class="navbar-brand" href="index.html">Latitude</a>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
     <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"><i class="fas fa-chart-line"></i> Plots</a>
+        <a class="nav-link dropdown-toggle" id="plot" data-toggle="dropdown" role="button"><i class="fas fa-chart-line"></i> Plots</a>
         <div class="dropdown-menu dropdown-menu-right">
           <a class="dropdown-item" href="Visualizations/temperature.html"><i class="fas fa-temperature-high"></i> Max Temperature</a>
           <a class="dropdown-item" href="Visualizations/humidity.html"><i class="fas fa-tint"></i> Humidity</a>
@@ -41,33 +41,34 @@
 <!-- Page Content -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-7">
+    <div class="col-md-7">
       <div class="jumbotron">
-        <h2>Summary: Weather vs. Latitude</h2>
+        <h2>Weather vs. Latitude</h2>
+        <h5>Project Summary</h5>
         <hr class="my-4">
         <img class="img-thumb float-left mr-4" src="Assets/weather.jpg" alt="weather Image" width=200>
         <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
         <p>After creating the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the anaysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
       </div>
     </div>
-    <div class="col-lg-5">
+    <div class="col-md-5">
       <div class="jumbotron">
         <h2>Visualizations</h2>
         <hr class="my-4">
         <div class="row">
-          <div class="col-lg-6 col 3">
-            <p class="img_title">Max Temperature<p>
+          <div class="col-md-6 col-3">
+            <p class="img_title">Max Temp<p>
             <a href="Visualizations/temperature.html"><img class="img-fluid hover" alt="Temperature Plot" src="Assets/temp.png"></a>
           </div>
-          <div class="col-lg-6 col 3">
+          <div class="col-md-6 col-3">
             <p class="img_title">Humidity<p>
             <a href="Visualizations/humidity.html"><img class="img-fluid hover" alt="Humidity Plot" src="Assets/humid.png"></a>
           </div>
-          <div class="col-lg-6 col 3">
+          <div class="col-md-6 col-3">
             <p class="img_title">Cloudiness<p>
             <a href="Visualizations/cloudiness.html"><img class="img-fluid hover" alt="Cloudiness Plot" src="Assets/cloud.png"></a>
           </div>
-          <div class="col-lg-6 col 3">
+          <div class="col-md-6 col-3">
             <p class="img_title">Wind Speed<p>
             <a href="Visualizations/wind_speed.html"><img class="img-fluid hover" alt="Wind Speed Plot" src="Assets/wind.png"></a>
           </div>

@@ -12,7 +12,7 @@
 
 <body>
 <!-- Nav Bar -->
-<nav class="navbar navbar-expand-lg bg-white navbar-light">
+<nav class="navbar navbar-expand-md bg-custom navbar-light">
     <a class="navbar-brand" href="../index.html">Latitude</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"><i class="fas fa-chart-line"></i> Plots</a>
+          <a class="nav-link dropdown-toggle" id="plot" data-toggle="dropdown" role="button"><i class="fas fa-chart-line"></i> Plots</a>
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="temperature.html"><i class="fas fa-temperature-high"></i> Max Temperature</a>
             <a class="dropdown-item" href="humidity.html"><i class="fas fa-tint"></i> Humidity</a>
@@ -41,29 +41,29 @@
   <!-- Page Content -->
 <div class="container">
   <div class="row">
-      <div class="col-lg-7">
+      <div class="col-md-7">
         <div class="jumbotron">
           <h2>Cloudiness</h2>
           <hr class="my-4">
           <img class="img-fluid" src="../Assets/cloud.png" alt="Cloudiness Plot">
-          <p">Analysis revealed that there appears to be no significant correlation between cloudiness and latitude.</p>
+          <p>Analysis revealed that there appears to be no significant correlation between cloudiness and latitude.</p>
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-md-5">
         <div class="jumbotron">
           <h2>Visualizations</h2>
           <hr class="my-4">
         <div class="row">
-          <div class="col-lg-6 col 3">
+          <div class="col-md-6 col 3">
             <a href="temperature.html"><img class="img-fluid" alt="Temperature Plot" src="../Assets/temp.png"></a>
           </div>
-          <div class="col-lg-6 col 3">
+          <div class="col-md-6 col 3">
             <a href="humidity.html"><img class="img-fluid" alt="Humidity Plot" src="../Assets/humid.png"></a>
           </div>
-          <div class="col-lg-6 col 3">
+          <div class="col-md-6 col 3">
             <a href="cloudiness.html"><img class="img-fluid active" alt="Cloudiness Plot" src="../Assets/cloud.png"></a>
           </div>
-          <div class="vis-thumb col-lg-6 col 3">
+          <div class="col-md-6 col 3">
             <a href="wind_speed.html"><img class="img-fluid" alt="Wind Speed Plot" src="../Assets/wind.png"></a>
           </div>
         </div>
