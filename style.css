@@ -1,52 +1,71 @@
-.index_title {
-    color: white;
+.navbar .navbar-brand {
     background-color: #54aaaa;
-    padding: 10px;
-    /* width: 100%; */
-}
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;}
 
-body {
-    /* font-family: 'Overpass Mono', monospace; */
-    background-color: gainsboro;
-}
+.navbar .navbar-brand:hover {
+    background-color: #148888d0;
+    color: white;}
 
 h2 {
     color: #54aaaa;
-    text-align: center;
-}
+    text-align: center;}
 
-h3 {
+h5 {
     color: #54aaaa;
-}
+    text-align: center;}
+
+.img_title {
+    color: #54aaaa;
+    text-align: center;
+    font-size: 9pt;
+    font-weight: bold;}
+
+.dropdown-menu {
+    border: none;
+    background-color:white}
+
+.navbar .nav-item:hover .nav-link {
+    background-color:rgba(210, 213, 216, 0.151);}
+
+body {
+    background-color: gainsboro;}
+
+@media (max-width: 991px) {
+    body {
+        background-color: white;}}
+
+.active {
+    border: 1.5px solid #54aaaa;}
+
+.hover:hover {
+    border: 1.5px solid #54aaaa;}
+
+.container {
+    margin-top: 30px;}
 
 .jumbotron {
-    background-color: white;
-}
-
+    background-color: white;}
 
 #tablefix {
     overflow-x:auto;
     overflow-y:auto;
-    max-height:600px;
-    max-width: auto;
-}
+    max-height:700px;
+    max-width: auto;}
 
 #tablefix thead th {
     position: sticky;
-    top: 0;
-}
+    top: 0;}
 
 table {
     border-collapse: collapse;
-    width: 100%;
-}
+    width: 100%;}
 
 th {
-    background: black;
+    background: #54aaaa;
+    color: white;
 }
-
-@media (max-width: 992px) {
-    body {
-        background-color: white;
-    }
-}
+    

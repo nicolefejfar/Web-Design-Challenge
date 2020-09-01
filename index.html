@@ -6,77 +6,81 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Glyphicons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="index.html"><h4 class="index_title">Latitude</h4></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plots
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-                    </div>
-                </li>
-
-                <li class="nav-item"><a class="nav-link" href="comparison.html">Comparison</a></li>
-                <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
-            </ul>
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light">
+  <a class="navbar-brand" href="index.html">Latitude</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"><i class="fas fa-chart-line"></i> Plots</a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="Visualizations/temperature.html"><i class="fas fa-temperature-high"></i> Max Temperature</a>
+          <a class="dropdown-item" href="Visualizations/humidity.html"><i class="fas fa-tint"></i> Humidity</a>
+          <a class="dropdown-item" href="Visualizations/cloudiness.html"><i class="fas fa-cloud"></i> Cloudiness</a>
+          <a class="dropdown-item" href="Visualizations/wind_speed.html"><i class="fas fa-wind"></i> Wind Speed</a>
         </div>
-      </nav>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="comparison.html"><i class="fas fa-compress-arrows-alt"></i> Comparison</a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" href="data.html"><i class="fas fa-table"></i> Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <br>
-    <br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="jumbotron">
-                    <h2>Summary: Weather vs. Latitude</h2>
-                    <hr class="my-4">
-                    <img class="img-fluid float-left mr-4" src="Assets/weather.jpg" alt="weather Image" width=200>
-                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                    <p>After creating the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the anaysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-                </div>
-            </div>
-            <div class="col-lg-5 col 12">
-                <div class="jumbotron">
-                    <h2>Visualizations</h2>
-                    <hr class="my-4">
-                    <div class="row">
-                        <div class="vis-thumb col-lg-6 col 3">
-                            <a href="temperature.html"><img class="img-fluid" alt="Temperature Plot" src="Assets/temp.png"</a>
-                        </div>
-                        <div class="vis-thumb col-lg-6 col 3">
-                            <a href="humidity.html"><img class="img-fluid" alt="Humidity Plot" src="Assets/humid.png"</a>
-                        </div>
-                        <div class="vis-thumb col-lg-6 col 3">
-                            <a href="cloudiness.html"><img class="img-fluid" alt="Cloudiness Plot" src="Assets/cloud.png"</a>
-                        </div>
-                        <div class="vis-thumb col-lg-6 col 3">
-                            <a href="wind_speed.html"><img class="img-fluid" alt="Wind Speed Plot" src="Assets/wind.png"</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-7">
+      <div class="jumbotron">
+        <h2>Summary: Weather vs. Latitude</h2>
+        <hr class="my-4">
+        <img class="img-thumb float-left mr-4" src="Assets/weather.jpg" alt="weather Image" width=200>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+        <p>After creating the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the anaysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+      </div>
     </div>
+    <div class="col-lg-5">
+      <div class="jumbotron">
+        <h2>Visualizations</h2>
+        <hr class="my-4">
+        <div class="row">
+          <div class="col-lg-6 col 3">
+            <p class="img_title">Max Temperature<p>
+            <a href="Visualizations/temperature.html"><img class="img-fluid hover" alt="Temperature Plot" src="Assets/temp.png"></a>
+          </div>
+          <div class="col-lg-6 col 3">
+            <p class="img_title">Humidity<p>
+            <a href="Visualizations/humidity.html"><img class="img-fluid hover" alt="Humidity Plot" src="Assets/humid.png"></a>
+          </div>
+          <div class="col-lg-6 col 3">
+            <p class="img_title">Cloudiness<p>
+            <a href="Visualizations/cloudiness.html"><img class="img-fluid hover" alt="Cloudiness Plot" src="Assets/cloud.png"></a>
+          </div>
+          <div class="col-lg-6 col 3">
+            <p class="img_title">Wind Speed<p>
+            <a href="Visualizations/wind_speed.html"><img class="img-fluid hover" alt="Wind Speed Plot" src="Assets/wind.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
 
-<!-- Just some bootstrap requirements -->
+<!-- Bootstrap Requirement -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
-
 </html>

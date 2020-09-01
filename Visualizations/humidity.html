@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Weather Dashboard</title>
+    <title>Humidity</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <!-- FontAwesome for Glyphicons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
@@ -13,7 +13,7 @@
 <body>
 <!-- Nav Bar -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light">
-  <a class="navbar-brand" href="index.html">Latitude</a>
+  <a class="navbar-brand" href="../index.html">Latitude</a>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -22,51 +22,49 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"><i class="fas fa-chart-line"></i> Plots</a>
         <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item" href="Visualizations/temperature.html"><i class="fas fa-temperature-high"></i> Max Temperature</a>
-          <a class="dropdown-item" href="Visualizations/humidity.html"><i class="fas fa-tint"></i> Humidity</a>
-          <a class="dropdown-item" href="Visualizations/cloudiness.html"><i class="fas fa-cloud"></i> Cloudiness</a>
-          <a class="dropdown-item" href="Visualizations/wind_speed.html"><i class="fas fa-wind"></i> Wind Speed</a>
+          <a class="dropdown-item" href="temperature.html"><i class="fas fa-temperature-high"></i> Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html"><i class="fas fa-tint"></i> Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html"><i class="fas fa-cloud"></i> Cloudiness</a>
+          <a class="dropdown-item" href="wind_speed.html"><i class="fas fa-wind"></i> Wind Speed</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="comparison.html"><i class="fas fa-compress-arrows-alt"></i> Comparison</a>
+        <a class="nav-link" href="../comparison.html"><i class="fas fa-compress-arrows-alt"></i> Comparison</a>
       </li>      
       <li class="nav-item">
-        <a class="nav-link" href="data.html"><i class="fas fa-table"></i> Data</a>
+        <a class="nav-link" href="../data.html"><i class="fas fa-table"></i> Data</a>
       </li>
     </ul>
   </div>
 </nav>
-
-<!-- Page Content -->
+  
+  <!-- Page Content -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-12">
-      <div class="jumbotron">
-        <h2>Comparison: X vs. Latitude</h2>
-        <hr class="my-4">
-        <p style="text-align: center;">Click any plot to get an in-depth analysis.</p>
-        <br>
+      <div class="col-lg-7">
+        <div class="jumbotron">
+          <h2>Humidity</h2>
+          <hr class="my-4">
+          <img class="img-fluid" src="../Assets/humid.png" alt="Humidity Plot">
+          <p">Analysis revealed that there appears to be no significant correlation between humidity and latitude.</p>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="jumbotron">
+          <h2>Visualizations</h2>
+          <hr class="my-4">
         <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <h5>vs. Max Temperature</h5>
-            <a href="Visualizations/temperature.html"><img class="img-fluid hover" alt="Temperature Plot" src="Assets/temp.png"></a>
-            <hr>
+          <div class="col-lg-6 col 3">
+            <a href="temperature.html"><img class="img-fluid" alt="Temperature Plot" src="../Assets/temp.png"></a>
           </div>
-          <div class="col-lg-6 col-md-12">
-            <h5>vs. Humidity</h5>
-            <a href="Visualizations/humidity.html"><img class="img-fluid hover" alt="Humidity Plot" src="Assets/humid.png"></a>
-            <hr>
+          <div class="col-lg-6 col 3">
+            <a href="humidity.html"><img class="img-fluid active" alt="Humidity Plot" src="../Assets/humid.png"></a>
           </div>
-          <div class="col-lg-6 col-md-12">
-            <h5>vs. Cloudiness</h5>
-            <a href="Visualizations/cloudiness.html"><img class="img-fluid hover" alt="Cloudiness Plot" src="Assets/cloud.png"></a>
-            <hr>
+          <div class="col-lg-6 col 3">
+            <a href="cloudiness.html"><img class="img-fluid" alt="Cloudiness Plot" src="../Assets/cloud.png"></a>
           </div>
-          <div class="col-lg-6 col-md-12">
-            <h5>vs. Wind Speed</h5>
-            <a href="Visualizations/wind_speed.html"><img class="img-fluid hover" alt="Wind Speed Plot" src="Assets/wind.png"></a>
-            <hr>
+          <div class="vis-thumb col-lg-6 col 3">
+            <a href="wind_speed.html"><img class="img-fluid" alt="Wind Speed Plot" src="../Assets/wind.png"></a>
           </div>
         </div>
       </div>
