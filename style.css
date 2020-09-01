@@ -1,10 +1,10 @@
 .navbar .navbar-brand {
-    background-color: #54aaaa;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-right: 10px;}
+background-color: #54aaaa;
+color: white;
+font-size: 25px;
+font-weight: bold;
+padding-left: 10px;
+padding-right: 10px;}
 
 .navbar .navbar-brand:hover {
     background-color: #148888d0;
@@ -31,31 +31,6 @@ h5 {
 body {
     background-color: gainsboro;}
 
-@media (min-width: 768px) {
-    .bg-custom {
-        background-color: white;
-    }}
-
-@media (max-width: 767px) {
-    body {
-        background-color: white;}
-    .bg-custom {
-        background-color: #54aaaa;}
-    .dropdown-menu {
-        background-color: #54aaaa;}
-    #plot {
-        color: white;}
-    .dropdown-item {
-    color: white;}
-    .navbar .nav-item .nav-link{
-    color: white;}
-    .navbar .nav-item .nav-link:hover {
-    background-color:rgba(210, 213, 216, 0.151);
-    color: white;}
-    .dropdown-item:hover {
-    color: white;
-    background-color:rgba(210, 213, 216, 0.151);}}
-
 .active {
     border: 1.5px solid #54aaaa;}
 
@@ -63,7 +38,7 @@ body {
     border: 1.5px solid #54aaaa;}
 
 .container {
-    margin-top: 20px;}
+    margin-top: 100px;}
 
 .jumbotron {
     background-color: white;}
@@ -84,6 +59,29 @@ table {
 
 th {
     background: #54aaaa;
-    color: white;
-}
-    
+    color: white;}
+
+@media (min-width: 992px) {
+    .bg-custom {
+        background-color: white;}}
+
+@media (max-width: 991px) {
+    body {
+        background-color: white;}
+    #plot {
+        color: white;}
+    .dropdown-item {
+        color: white;}
+    .navbar .nav-item .nav-link{
+        color: white;}
+    .navbar .nav-item .nav-link:hover {
+        background-color:rgba(210, 213, 216, 0.151);
+        color: white;}
+    .dropdown-item:hover {
+        color: white;
+        background-color:rgba(210, 213, 216, 0.151);}
+    .bg-custom {
+        background-color: #54aaaa;}
+    .dropdown-menu {
+        background-color: #54aaaa;}}
+
